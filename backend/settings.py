@@ -51,6 +51,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'backend.urls'
 
+# CORS (autorise ton frontend dev)
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",   # Vite default
+    "http://127.0.0.1:5173",
+]
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
